@@ -1,6 +1,4 @@
-"""Criem um jogo chamado A Ilha dos Códigos Perdidos.
-
-#TRETAS
+'''Criem um jogo chamado A Ilha dos Códigos Perdidos.
 
 O jogo precisa ter:
 
@@ -15,17 +13,34 @@ Pelo menos 1 for;
 Uso de operadores matemáticos;
 Uso de operadores relacionais;
 Uso de and, or ou not;
-final de vitória ou derrota."""
+final de vitória ou derrota.'''
 
-#A Ilha dos Códigos Perdidos
+######## A Ilha dos Códigos Perdidos ########
 
-#FASE 1 - chegou na ilha
+######## Apresentação do joguinho:
+print("Seja bem vindo à Ilha dos Códigos Perdidos, uma terra cheia de escolhas e blábláblá")
+
+
+######## Conhecer o jogador:
+nomejogador = input("Qual o seu nome?")
+idadejogador = int(input("Qual a sua idade?")
 vida = 100;
 energia = 50;
 
-print("=====================\nVocê chegou na ilha\n=====================")
+print(f"""{nomejogador}, você está pronto para a maior aventura de sua vida?
+Será que o seu coraçãozinho, no auge dos {idadejogador} anos aguenta essa emoção?
+Você começa essa aventura com 'life' de {vida}pts e energia em {energia}pts""")
+
+
+######## FASE 1
+# Chegou na Ilha
+vida = 100;
+energia = 50;
+
+print("=====================\nVocê chegou na Ilha\n=====================")
 print(f"Energia: {energia}\nVida: {vida}\n\n")
-fase1 = int(input("Você encontrou na praia uma cabana e um barco abandonado.\nMas a chuva está chegando e você só tem tempo para correr para um dos dois lugares.\nPra onde você vai?\n\nCabana = 1 ou Barco=2"))
+fase1 = int(input("""Você encontrou na praia uma cabana e um barco abandonado.\n
+Mas a chuva está chegando e você só tem tempo para correr para um dos dois lugares.\nPra onde você vai?\n\nCabana = 1 ou Barco=2"""))
 
 
 
