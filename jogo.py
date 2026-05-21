@@ -1,5 +1,7 @@
 """Criem um jogo chamado A Ilha dos Códigos Perdidos.
 
+#TRETAS
+
 O jogo precisa ter:
 
 Nome do jogador;
