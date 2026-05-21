@@ -32,15 +32,20 @@ Será que o seu coraçãozinho, no auge dos {idadejogador} anos aguenta essa emo
 Você começa essa aventura com 'life' de {vida}pts e energia em {energia}pts""")
 
 
-######## FASE 1
+#=========================================================   FASE 1   ============================================================
 # Chegou na Ilha
 vida = 100;
 energia = 50;
 
-print("=====================\nVocê chegou na Ilha\n=====================")
-print(f"Energia: {energia}\nVida: {vida}\n\n")
-fase1 = int(input("""Você encontrou na praia uma cabana e um barco abandonado.\n
-Mas a chuva está chegando e você só tem tempo para correr para um dos dois lugares.\nPra onde você vai?\n\nCabana = 1 ou Barco=2"""))
+print(f"""=====================\nVocê chegou na Ilha\n=====================
+Energia: {energia}
+Vida: {vida}
+
+""")
+print("""Você encontrou na praia uma cabana e um barco abandonado.
+Mas a chuva está chegando e você só tem tempo para correr para um dos dois lugares.
+Pra onde você deseja ir?""")
+final1 = int(input("Cabana = 1\n\nBarco = 2")
 
 
 
