@@ -17,21 +17,29 @@ Uso de operadores relacionais;
 Uso de and, or ou not;
 final de vitória ou derrota.'''
 
-######## A Ilha dos Códigos Perdidos ########
+print("""
+                            ######## A Ilha dos Códigos Perdidos ########""")
 
 ######## Apresentação do joguinho:
-print("Seja bem vindo à Ilha dos Códigos Perdidos, uma terra cheia de escolhas e blábláblá")
+print("""
+            Seja bem vindo à Ilha dos Códigos Perdidos,
+                        uma terra cheia de escolhas e blábláblá
+
+""")
 
 
 ######## Conhecer o jogador:
-nomejogador = input("Qual o seu nome?")
-idadejogador = int(input("Qual a sua idade?")
-vida = 100;
-energia = 50;
-
-print(f"""{nomejogador}, você está pronto para a maior aventura de sua vida?
+nomejogador = input("Qual o seu nome?\n")
+idadejogador = int(input("\nQual a sua idade?\n"))
+vida = 100
+energia = 50
+segue = input(f"""\n{nomejogador}, você está pronto para a maior aventura de sua vida?
 Será que o seu coraçãozinho, no auge dos {idadejogador} anos aguenta essa emoção?
-Você começa essa aventura com 'life' de {vida}pts e energia em {energia}pts""")
+Você começa essa aventura com 'life' de {vida}pts e energia em {energia}pts.\n
+Digite para prosseguir...""")
+
+
+
 
 
 #=========================================================   FASE 1   ============================================================
@@ -39,29 +47,36 @@ Você começa essa aventura com 'life' de {vida}pts e energia em {energia}pts"""
 vida = 100;
 energia = 50;
 
-print(f"""=====================\nFASE 1 - VOCÊ CHEGOU NA ILHA\n=====================
-Energia: {energia}
+print(f"""
+      
+==========================================
+       FASE 1 - VOCÊ CHEGOU NA ILHA
+==========================================
 Vida: {vida}
+Energia: {energia}
+
 
 """)
 final1 = 0
-print("""Você encontrou na praia uma CABANA e um BARCO abandonado.
+print("""===xxx===xxx===XXX===XX===X===XX===XXX===xxx===xxx===
+Você encontrou na praia uma CABANA e um BARCO abandonado.
 Mas a chuva está chegando e você só tem tempo para correr para um dos dois lugares.
 Pra onde você deseja ir?""")
-final1 = int(input("CABANA = 1\n\nBARCO = 2")
+final1 = int(input("CABANA = 1\n\nBARCO = 2"))
+cabana = f"""Caraca.. Você se deparou com um variável virulenta totalmente virulosa.
+    Ela acabou te virulando e você terminou descobrindo que deveria ter ido para o barco.
+    Digite '2' para ir para o BARCO"""
+barco = f"Ao chegar no barco você encontrou uma faca e um espelho. Contudo, pode escolher apenas um dos itens pois está com os bolsos cheios. Escolha apenas 1\nFaca - 3            Espelho - 4"
 
 ####
              
-if final1 != 1  
-    fase2, final1 = int(input(f"""Caraca.. Você se deparou com um variável virulenta totalmente virulosa.
-    Ela acabou te virulando e você terminou descobrindo que deveria ter ido para o barco.
-    Digite '2' para ir para o BARCO"""))
-final1 = 0
-             
-else final1 == 1:
+if final1 != 1:
+    fase2, final1 = int(input(cabana))
+    final1 = 0
+elif final1 ==2:
     energia -= 10
     vida = 100
-print(f"""Energia: {energia}
+    print(f"""Energia: {energia}
 Vida: {vida}
 """)
     
@@ -75,9 +90,28 @@ print(f"""Energia: {energia}
 Vida: {vida}
 """)
 
-    fase2 = int(input("Ao chegar no barco você encontrou uma faca e um espelho. Contudo, pode escolher apenas um dos itens pois está com os bolsos cheios. Escolha apenas 1\nFaca - 3            Espelho - 4"))
+fase2 = int(input(barco))
 
 oioioi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #=========================================================   FASE 2   ============================================================
 #FASE 3 - faca e espelho
@@ -103,9 +137,55 @@ elif fase3 == 3:
 
 else:
     print("escolheu o espelho")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #=========================================================   FASE 2   ============================================================
 
 energia -= 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #=========================================================   FASE 2   ============================================================
